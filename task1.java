@@ -11,7 +11,7 @@ public class task1 {
 
         String playAgain;
         do {
-            int number = rand.nextInt(100) + 1; // Random number 1-100
+            int number = rand.nextInt(100) + 1;
             int attempts = 0;
             int maxAttempts = 7;
             boolean guessed = false;
@@ -25,7 +25,7 @@ public class task1 {
                 attempts++;
 
                 if (guess == number) {
-                    System.out.println("🎉 Correct! You guessed it in " + attempts + " attempts.");
+                    System.out.println(" Correct! You guessed it in " + attempts + " attempts.");
                     score++;
                     guessed = true;
                     break;
@@ -37,7 +37,7 @@ public class task1 {
             }
 
             if (!guessed) {
-                System.out.println("❌ Out of attempts! The number was: " + number);
+                System.out.println(" Out of attempts! The number was: " + number);
             }
 
             System.out.println("Your current score: " + score);
@@ -49,3 +49,4 @@ public class task1 {
         sc.close();
     }
 }
+
